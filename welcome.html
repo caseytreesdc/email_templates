@@ -22,12 +22,41 @@
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
       } /* Remove spacing between tables in Outlook 2007 and up */
+      @media only screen and (max-width: 620px) {
+        .title {
+          font-size: 20px !important;
+        }
+        .greeting-name {
+          font-size: 18px !important;
+        }
+        .greeting-message {
+          font-size: 18px !important;
+        }
+        .quad {
+          display: block;
+          width: 500px;
+        }
+        .image-browser {
+          display: none !important;
+          margin: 0;
+        }
+        .image-responsive {
+          display: block !important;
+          margin: 0;
+        }
+        .quad-tag {
+          font-size: 18px !important;
+        }
+        .quad-text {
+          font-size: 17px !important;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- // preheader email text \\ -->
     <div style="display: none; max-height: 0px; overflow: hidden;">
-      no p tag
+      test 0 welcome
       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
     <!-- // Begin Module: Outer most table of body -- the cellpadding="20" is for the padding around the whole email, showing up on top and bottom\\ -->
@@ -87,6 +116,7 @@
                   <tr>
                     <td>
                       <p
+                        class="greeting-name"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
@@ -97,6 +127,7 @@
                         Delores,
                       </p>
                       <p
+                        class="greeting-message"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
@@ -127,6 +158,7 @@
                   <tr align="center">
                     <!-- Begin module Top Left Quad -->
                     <td
+                      class="quad"
                       valign="top"
                       align="center"
                       width="250"
@@ -141,9 +173,15 @@
                           <tr>
                             <td>
                               <img
-                                class="img__browser"
+                                class="image-browser"
                                 src="https://dl.dropboxusercontent.com/s/kkrzamyvhxlxdfm/welcome-store.jpeg?dl=0"
                                 style="display: block;"
+                                alt=""
+                              />
+                              <img
+                                class="image-responsive"
+                                src="https://dl.dropboxusercontent.com/s/ccaeg53nl6fsovy/welcome-store-responsive.jpg?dl=0"
+                                style="display: none;"
                                 alt=""
                               />
                             </td>
@@ -151,6 +189,7 @@
                           <tr>
                             <td style="background: #a4532e;">
                               <p
+                                class="quad-tag"
                                 style="
                                   font-size: 12px;
                                   font-family: zeitung-mono, 'Open Sans',
@@ -168,6 +207,7 @@
                           <tr>
                             <td>
                               <p
+                                class="quad-text"
                                 style="
                                   font-family: lato, Arial, Helvetica,
                                     sans-serif;
@@ -190,6 +230,7 @@
                     <!-- End module Top Left QUAD -->
                     <!-- Begin module TOP RIGTH QUAD -->
                     <td
+                      class="quad"
                       valign="top"
                       align="center"
                       width="250"
@@ -204,9 +245,15 @@
                           <tr>
                             <td>
                               <img
-                                class="img__browser"
+                                class="image-browser"
                                 src="https://dl.dropboxusercontent.com/s/la38qqtz08fkkii/welcome-upcoming.png?dl=0"
                                 style="display: block;"
+                                alt=""
+                              />
+                              <img
+                                class="image-responsive"
+                                src="https://dl.dropboxusercontent.com/s/ztuvvhc7lxa2ys0/welcome-upcoming-responsive.png?dl=0"
+                                style="display: none;"
                                 alt=""
                               />
                             </td>
@@ -214,6 +261,7 @@
                           <tr style="background: rgb(225, 131, 35);">
                             <td>
                               <p
+                                class="quad-tag"
                                 style="
                                   font-size: 12px;
                                   font-family: zeitung-mono, 'Open Sans',
@@ -230,6 +278,7 @@
                           <tr>
                             <td>
                               <p
+                                class="quad-text"
                                 style="
                                   font-family: lato, Arial, Helvetica,
                                     sans-serif;
@@ -263,6 +312,7 @@
                   <tr align="center">
                     <!-- Begin module BOTTOM LEFT QUAD -->
                     <td
+                      class="quad"
                       valign="top"
                       align="center"
                       width="250"
@@ -277,9 +327,15 @@
                           <tr>
                             <td>
                               <img
-                                class="img__browser"
+                                class="image-browser"
                                 src="https://dl.dropboxusercontent.com/s/wdir2nr5ftq842p/welcome-member.png?dl=0"
                                 style="display: block;"
+                                alt=""
+                              />
+                              <img
+                                class="image-responsive"
+                                src="https://dl.dropboxusercontent.com/s/640hyz7q7bzmmyg/welcome-membership-responsive.png?dl=0"
+                                style="display: none;"
                                 alt=""
                               />
                             </td>
@@ -287,6 +343,7 @@
                           <tr style="background: #2c0f0f;">
                             <td>
                               <p
+                                class="quad-tag"
                                 style="
                                   font-size: 12px;
                                   font-family: zeitung-mono, 'Open Sans',
@@ -303,6 +360,7 @@
                           <tr>
                             <td>
                               <p
+                                class="quad-text"
                                 style="
                                   font-family: lato, Arial, Helvetica,
                                     sans-serif;
@@ -323,6 +381,7 @@
                     <!-- End module BOTTOME LEFT QUAD -->
                     <!-- Begin module BOTTOM RIGTH QUAD -->
                     <td
+                      class="quad"
                       valign="top"
                       align="center"
                       width="250"
@@ -337,9 +396,15 @@
                           <tr>
                             <td>
                               <img
-                                class="img__browser"
+                                class="image-browser"
                                 src="https://dl.dropboxusercontent.com/s/6rrcyc3ezrb1r0f/welcome-learn.png?dl=0"
                                 style="display: block;"
+                                alt=""
+                              />
+                              <img
+                                class="image-responsive"
+                                src="https://dl.dropboxusercontent.com/s/6oe1wkb60xkmbsy/welcome-learn-responsive.png?dl=0"
+                                style="display: none;"
                                 alt=""
                               />
                             </td>
@@ -347,6 +412,7 @@
                           <tr style="background: #395940;">
                             <td>
                               <p
+                                class="quad-tag"
                                 style="
                                   font-size: 12px;
                                   font-family: zeitung-mono, 'Open Sans',
@@ -363,6 +429,7 @@
                           <tr>
                             <td>
                               <p
+                                class="quad-text"
                                 style="
                                   font-family: lato, Arial, Helvetica,
                                     sans-serif;
@@ -392,6 +459,7 @@
                   <tr>
                     <td>
                       <p
+                        class="greeting-message"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
@@ -433,6 +501,7 @@
                         for the latest updates.
                       </p>
                       <p
+                        class="greeting-message"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
