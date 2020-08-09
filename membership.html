@@ -22,12 +22,29 @@
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
       } /* Remove spacing between tables in Outlook 2007 and up */
+      @media only screen and (max-width: 620px) {
+        .title {
+          font-size: 20px !important;
+        }
+        .tldr-heading {
+          font-size: 18px !important;
+        }
+        .tldr-message {
+          font-size: 18px !important;
+        }
+        .greeting-name {
+          font-size: 18px !important;
+        }
+        .greeting-message {
+          font-size: 18px !important;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- // preheader email text \\ -->
     <div style="display: none; max-height: 0px; overflow: hidden;">
-      no p tag
+      test 1 membership
       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
     <!-- // Begin Module: Outer most table of body -- the cellpadding="20" is for the padding around the whole email, showing up on top and bottom\\ -->
@@ -47,12 +64,12 @@
             width="700"
             style="background: rgb(255, 255, 255);"
           >
-          <!-- // Start Module: HEADING \\ -->
-          <tr>
-            <td align="center">
-              <h1
-              class="title"
-              style="
+            <!-- // Start Module: HEADING \\ -->
+            <tr>
+              <td align="center">
+                <h1
+                  class="title"
+                  style="
                     font-family: zeitung-mono, 'Open Sans', sans-serif, opens;
                     font-weight: 400;
                     font-style: normal;
@@ -62,30 +79,31 @@
                     padding: 40px 0 5px 0;
                   "
                 >
-                <span style="color: #2c0f0f;">CASEY TREES / </span>MEMBERSHIP
-              </h1>
-            </td>
-          </tr>
-          <!-- // End Module: HEADING \\ -->
-          <!-- // Start Module: TL;DR \\ -->
-          <tr>
-            <td align="center">
-              <table width="600" cellpadding="0">
-                <!-- // Start Module: BLUE LINE \\ -->
-                <tr>
-                  <td height="10" style="background-color: #3768b2;"></td>
-                </tr>
-                <!-- // End Module: BLUE LINE \\ -->
-                <tr>
-                  <td
-                  cellpadding="0"
-                  style="
-                        background-image: url(https://caseytrees.org/wp-content/uploads/2020/07/graph-background-3.png);
+                  <span style="color: #2c0f0f;">CASEY TREES / </span>MEMBERSHIP
+                </h1>
+              </td>
+            </tr>
+            <!-- // End Module: HEADING \\ -->
+            <!-- // Start Module: TL;DR \\ -->
+            <tr>
+              <td align="center">
+                <table width="600" cellpadding="0">
+                  <!-- // Start Module: BLUE LINE \\ -->
+                  <tr>
+                    <td height="10" style="background-color: #3768b2;"></td>
+                  </tr>
+                  <!-- // End Module: BLUE LINE \\ -->
+                  <tr>
+                    <td
+                      cellpadding="0"
+                      style="
+                        background-image: url(https://dl.dropboxusercontent.com/s/zlx9minv8aqw4sx/Graph.png?dl=0);
                         background-size: cover;
                       "
                     >
-                    <div style="margin: 20px 20px 70px 20px;">
-                      <h1
+                      <div style="margin: 20px 20px 70px 20px;">
+                        <h1
+                          class="tldr-heading"
                           style="
                             font-family: zeitung-mono, 'Open Sans', Arial,
                               Helvetica, sans-serif;
@@ -99,6 +117,7 @@
                           YOUR CONTRIBUTION
                         </h1>
                         <p
+                          class="tldr-message"
                           style="
                             font-family: lato-light, zeitung-mono, Arial,
                               Helvetica, sans-serif;
@@ -123,6 +142,7 @@
                   <tr>
                     <td>
                       <p
+                        class="greeting-name"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
@@ -133,6 +153,7 @@
                         Dolores,
                       </p>
                       <p
+                        class="greeting-message"
                         style="
                           font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
@@ -240,7 +261,7 @@
                 <a target="__blank" href="https://caseytrees.org/"
                   ><img
                     width="138"
-                    src="https://caseytrees.org/wp-content/uploads/2019/01/black-tree-logo.png"
+                    src="https://caseytrees.org/wp-content/uploads/2020/08/warn-black_Tree-logo_emails.png"
                 /></a>
               </td>
             </tr>
@@ -256,14 +277,14 @@
                     ><img
                       alt=""
                       height="35"
-                      src="https://caseytrees.org/wp-content/uploads/2018/11/facebook-logo13259.png"
+                      src="https://caseytrees.org/wp-content/uploads/2020/08/Warm-black-Facebook.png"
                       width="35" /></a
                   >&nbsp;&nbsp;
                   <a target="__blank" href="http://twitter.com/caseytrees"
                     ><img
                       alt=""
                       height="35"
-                      src="https://caseytrees.org/wp-content/uploads/2018/11/twitter-logo.png"
+                      src="https://caseytrees.org/wp-content/uploads/2020/08/Warm-black-Twitter.png"
                       width="35" /></a
                   >&nbsp;&nbsp;<a
                     target="__blank"
@@ -271,7 +292,7 @@
                     ><img
                       alt=""
                       height="35"
-                      src="https://caseytrees.org/wp-content/uploads/2018/11/instagram-logo.png"
+                      src="https://caseytrees.org/wp-content/uploads/2020/08/Warm-black-Instagram.png"
                       width="35" /></a
                   >&nbsp;&nbsp;<a
                     target="__blank"
