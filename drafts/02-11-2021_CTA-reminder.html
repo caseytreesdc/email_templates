@@ -43,13 +43,22 @@
         .greeting-message {
           font-size: 18px !important;
         }
+        .email-container {
+          width: 90%;
+        }
+        .blue-line {
+          display: none;
+        }
+        .heading-row {
+          display: none;
+        }
       } /* Display size query */
     </style>
   </head>
   <body>
     <!-- // preheader email text \\ -->
     <div style="display: none; max-height: 0px; overflow: hidden">
-        UTS 2020 Youtube Playlist
+      Support green infrastructure throughout the District.
       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
     <!-- // Begin Module: Outer most table of body -- the cellpadding="20" is for the padding around the whole email, showing up on top and bottom\\ -->
@@ -70,8 +79,8 @@
             style="background: rgb(255, 255, 255); border-collapse: collapse"
           >
             <!-- // Start Module: HEADING \\ -->
-            <tr>
-              <td>
+            <tr class="heading-row">
+              <td align="center" style="padding-top: 50px">
                 <h1
                   class="title"
                   style="
@@ -79,25 +88,55 @@
                       'Open Sans', sans-serif, opens;
                     font-weight: 400;
                     font-style: normal;
-                    font-size: 14px;
+                    font-size: 12px;
                     letter-spacing: 2px;
                     color: #395940;
-                    text-align: center;
-                    padding: 20px 0 0 0;
+                    display: inline;
                   "
                 >
-                  <span style="color: #2c0f0f">CASEY TREES / </span>MONTGOMERY
-                  COUNTY PARKS
+                  <span style="color: #2c0f0f">CASEY TREES / </span>PERFORMANCE
+                  HEARINGS
+                </h1>
+                <h1
+                  class="title"
+                  style="
+                    font-family: zeitung-mono, 'IBM Plex Mono', monospace,
+                      'Open Sans', sans-serif, opens;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    color: #2c0f0f;
+                    margin-left: 150px;
+                    display: inline;
+                  "
+                >
+                  02/2021
                 </h1>
               </td>
             </tr>
             <!-- // End Module: HEADING \\ -->
+            <!-- // Start Module: BLUE LINE \\ -->
+            <tr>
+              <td align="center">
+                <div
+                  class="blue-line"
+                  style="
+                    margin-bottom: 8px;
+                    height: 10px;
+                    width: 600px;
+                    background-color: #395940;
+                  "
+                ></div>
+              </td>
+            </tr>
+            <!-- // End Module: BLUE LINE \\ -->
             <!-- // Start Module: IMAGE \\ -->
             <tr>
               <td align="center">
                 <img
                   width="600"
-                  src="https://caseytrees.org/wp-content/uploads/2019/08/presenters-article.jpg"
+                  src="https://caseytrees.org/wp-content/uploads/2021/02/CTA-reminder_performance.png"
                 />
               </td>
             </tr>
@@ -118,57 +157,148 @@
                   <tr>
                     <td>
                       <p
-                        class="tldr-message"
+                        class="message"
                         style="
-                          font-style: italic;
-                          font-family: lato, Helvetica, zeitung-mono,
-                            'IBM Plex Mono', monospace, Arial, Helvetica,
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
                             sans-serif;
-                          color: rgb(0, 0, 0);
-                          padding: 10px 20px;
-                        "
-                      >
-                        Hi %%first_name%%
-                      </p>
-                      <p
-                        class="message"
-                        style="
-                          font-family: lato, zeitung-mono, Arial,
-                            Helvetica, sans-serif;
                           font-size: 16px;
                           color: #2c0f0f;
                         "
                       >
-                        You can view the recorded conference sessions at the
-                        link below. Recordings numbered 1-5 are the recordings
-                        from the actual conference on December 2nd which include
-                        the speaker’s presentation with live Q&A with the
-                        speakers. Recordings numbered 6-10 are only the
-                        speaker’s presentations with no Q&A. These recordings
-                        will be available through December 17th.
+                        Hi %%first_name%%,
                       </p>
-                      <a
-                        style="
-                          font-size: 18px;
-                          font-weight: bold;
-                          color: #3768b2;
-                          font-family: lato, zeitung-mono, Arial,
-                            Helvetica, sans-serif;
-                        "
-                        href="https://www.youtube.com/playlist?list=PLMFKdt1L4SvRj2GydDsaf9S4knEYfizfM"
-                      >
-                        Urban Tree Summit 2020 Youtube Playlist
-                      </a>
                       <p
                         class="message"
                         style="
-                          font-family: lato, zeitung-mono, Arial,
-                            Helvetica, sans-serif;
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
                           font-size: 16px;
                           color: #2c0f0f;
                         "
                       >
-                        We look forward to seeing at the 2021 conference.
+                        The 2021 Performance Oversight hearings start on
+                        February 22, and we want YOU to submit comments!
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          font-size: 16px;
+                          color: #2c0f0f;
+                        "
+                      >
+                        These hearings are the only time that the Council
+                        reviews an entire year’s worth of agency activities. Let
+                        our Councilmembers know where agencies have done well,
+                        and where the need to improve by submitting comments or
+                        testifying. Share your thoughts, experiences, and advice
+                        for increasing protection, adding more greenspace, and
+                        supporting green infrastructure across the entire
+                        District! These comments will help the agencies improve
+                        their services in the new year and guide the Council on
+                        future funding decisions.
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          color: #2c0f0f;
+                          font-size: 16px;
+                          text-align: center;
+                          padding: 10px 0;
+                        "
+                      >
+                        <a
+                          style="
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #3768b2;
+                            font-family: lato, monospace, Helvetica, sans-serif;
+                            text-transform: uppercase;
+                          "
+                          href="https://www.tfaforms.com/4877936"
+                          target="_blank"
+                        >
+                          SUBMIT YOUR TESTIMONY AND/OR SIGN UP <br />
+                          TO TESTIFY IN PERSON
+                        </a>
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          font-size: 16px;
+                          color: #2c0f0f;
+                        "
+                      >
+                        The comments take about 30 minutes to write and you can
+                        find information about the agencies and Casey Trees’
+                        2021 Performance Oversight hearing recommendations
+                        <a
+                          style="font-weight: bold; color: #3768b2"
+                          target="__blank"
+                          href="https://caseytrees.org/wp-content/uploads/2021/01/CTA-2021-Performance-Hearing-Asks_FINAL.pdf"
+                          >here</a
+                        >.
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          color: #2c0f0f;
+                          font-size: 16px;
+                        "
+                      >
+                        Check out the
+                        <a
+                          style="font-weight: bold; color: #3768b2"
+                          target="__blank"
+                          href="https://caseytrees.org/advocacy-portal-3-0/"
+                          >Advocacy Portal</a
+                        >
+                        for
+                        <a
+                          style="font-weight: bold; color: #3768b2"
+                          target="__blank"
+                          href="https://caseytrees.org/resources/?search=&resource_category=public-comments"
+                          >example comments</a
+                        >
+                        and the
+                        <a
+                          style="font-weight: bold; color: #3768b2"
+                          target="__blank"
+                          href="https://caseytrees.org/wp-content/uploads/2021/01/Advocacy-Handbook-2021.pdf"
+                          >Advocacy Handbook</a
+                        >
+                        for fun facts about the benefits of trees and tips and
+                        tricks for writing a testimony.
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          color: #2c0f0f;
+                          font-size: 16px;
+                        "
+                      >
+                        If you have any questions, feel free to send me an email
+                        or give me a call at <br />(202) 349-3478.
+                      </p>
+                      <p
+                        class="message"
+                        style="
+                          font-family: lato, zeitung-mono, Arial, Helvetica,
+                            sans-serif;
+                          color: #2c0f0f;
+                          font-size: 16px;
+                        "
+                      >
+                        I look forward to reading your comments!
                       </p>
                       <p
                         class="greeting-message"
@@ -176,12 +306,11 @@
                           font-family: lato, Helvetica, zeitung-mono,
                             'IBM Plex Mono', monospace, Arial, Helvetica,
                             sans-serif;
-                          color: rgb(0, 0, 0);
-                          font-size: 14px;
+                          color: #2c0f0f;
+                          font-size: 16px;
                         "
                       >
-                        Casey Trees <br />
-                        Montgomery Parks
+                        Leah
                       </p>
                     </td>
                   </tr>
@@ -190,15 +319,19 @@
             </tr>
             <!-- // END Module: Email Text \\ -->
             <!-- // Start Module: BLUE LINE \\ -->
-            <!-- // Start Module: BLUE LINE \\ -->
             <tr>
               <td align="center">
                 <div
-                  style="height: 10px; width: 600px; background-color: #395940"
+                  class="blue-line"
+                  style="
+                    margin-top: 10px;
+                    height: 10px;
+                    width: 600px;
+                    background-color: #395940;
+                  "
                 ></div>
               </td>
             </tr>
-            <!-- // End Module: BLUE LINE \\ -->
             <!-- // End Module: BLUE LINE \\ -->
             <!-- // Begin Module: VIEW ONLINE \\ -->
             <tr>
@@ -240,17 +373,6 @@
                   ><img
                     width="250"
                     src="https://caseytrees.org/wp-content/uploads/2020/12/forest-header-logo.png"
-                /></a>
-              </td>
-            </tr>
-            <tr>
-              <td align="center">
-                <a href="https://www.montgomeryparks.org/" target="__blank"
-                  ><img
-                    src="https://caseytrees.org/wp-content/uploads/2020/10/moco_logo.jpeg"
-                    alt=""
-                    width="100"
-                    style="padding: 20px"
                 /></a>
               </td>
             </tr>
